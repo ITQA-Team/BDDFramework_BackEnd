@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 02 15:38:51 IST 2025</td>
+<td>Started on:</td><td>Thu Jan 02 20:04:02 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2441 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2345 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,42 +77,48 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to create a book with missing title", "Create Book API"</td>
-<td><div><pre>java.lang.AssertionError: Expected message not found expected [true] but found [false]
+<td><div><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at stepDefinitions.BookApiSteps.theResponseBodyShouldContain(BookApiSteps.java:62)
-	at ✽.the response body should contain &quot;title is required&quot;(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:18)
-</pre></div><a href='#' onClick='toggleBox("stack-trace150835665", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace150835665'><pre>java.lang.AssertionError: Expected message not found expected [true] but found [false]
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:46)
+	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2145961947", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2145961947'><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at stepDefinitions.BookApiSteps.theResponseBodyShouldContain(BookApiSteps.java:62)
-	at ✽.the response body should contain &quot;title is required&quot;(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:18)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:46)
+	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:17)
 </pre></div></td>
 <td>0</td>
 <td>runners.TestRunner@5852c06f</td></tr>
 <tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully create a new book", "Create Book API"</td>
-<td><div><pre>java.lang.AssertionError: Unexpected status code expected [201] but found [400]
+<td><div><pre>java.lang.AssertionError: Unexpected status code expected [201] but found [208]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:44)
+	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:46)
 	at ✽.I should receive a response with status code 201(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:8)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1685820260", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1685820260'><pre>java.lang.AssertionError: Unexpected status code expected [201] but found [400]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1379186202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1379186202'><pre>java.lang.AssertionError: Unexpected status code expected [201] but found [208]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:1419)
 	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:44)
+	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:46)
 	at ✽.I should receive a response with status code 201(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:8)
 </pre></div></td>
 <td>1</td>
