@@ -22,9 +22,9 @@ public class BookApiSteps {
 
     @When("I send a POST request to {string} with the following details:")
     public void iSendAPOSTRequestToWithTheFollowingDetails(String endpoint, io.cucumber.datatable.DataTable dataTable) {
-        // Extract book details from DataTable
-        String title = dataTable.cell(1, 0).trim();
-        String author = dataTable.cell(1, 1).trim();
+        // Extract book details from DataTable with null checks
+        String title = dataTable.cell(1, 0) != null ? dataTable.cell(1, 0).trim() : "";
+        String author = dataTable.cell(1, 1) != null ? dataTable.cell(1, 1).trim() : "";
 
         // Create JSON payload
         String jsonBody = String.format("{\"title\": \"%s\", \"author\": \"%s\"}", title, author);
@@ -39,6 +39,7 @@ public class BookApiSteps {
         System.out.println("Response Code: " + response.getStatusCode());
         System.out.println("Response Body: " + response.prettyPrint());
     }
+
 
     @Then("I should receive a response with status code {int}")
     public void iShouldReceiveAResponseWithStatusCode(int statusCode) {

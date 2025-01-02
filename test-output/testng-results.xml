@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-02T20:04:02 IST" name="Default suite" finished-at="2025-01-02T20:04:04 IST" duration-ms="2345">
+  <suite started-at="2025-01-02T20:17:38 IST" name="Default suite" finished-at="2025-01-02T20:17:42 IST" duration-ms="4441">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5852c06f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-01-02T20:04:02 IST" name="Default test" finished-at="2025-01-02T20:04:04 IST" duration-ms="2345">
+    <test started-at="2025-01-02T20:17:38 IST" name="Default test" finished-at="2025-01-02T20:17:42 IST" duration-ms="4441">
       <class name="runners.TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T20:04:02 IST" name="setUpClass" finished-at="2025-01-02T20:04:02 IST" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T20:17:38 IST" name="setUpClass" finished-at="2025-01-02T20:17:38 IST" duration-ms="446" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35145874]]>
+                <![CDATA[org.testng.TestRunner@5d767218]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T20:04:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T20:04:04 IST" duration-ms="1522" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T20:17:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T20:17:42 IST" duration-ms="3574" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,27 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Unexpected status code expected [201] but found [208]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Unexpected status code expected [201] but found [208]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:1419)
-at org.testng.Assert.assertEquals(Assert.java:1383)
-at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:46)
-at ✽.I should receive a response with status code 201(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:8)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T20:04:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T20:04:04 IST" duration-ms="195" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T20:17:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T20:17:42 IST" duration-ms="265" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -79,7 +62,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:1419)
 at org.testng.Assert.assertEquals(Assert.java:1383)
-at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:46)
+at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:47)
 at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:17)
 ]]>
             </full-stacktrace>
@@ -87,7 +70,7 @@ at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T20:04:04 IST" name="tearDownClass" finished-at="2025-01-02T20:04:04 IST" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T20:17:42 IST" name="tearDownClass" finished-at="2025-01-02T20:17:42 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

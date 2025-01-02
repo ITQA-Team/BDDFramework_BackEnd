@@ -13,6 +13,6 @@ Feature: Create Book API
     Given I am authenticated as an admin
     When I send a POST request to "/api/books" with the following details:
       | title | author        |
-      |   2    | Jane          |
+      |       | Jane          |
     Then I should receive a response with status code 400
     And the response body should contain "Invalid | Empty Input Parameters in the Request"
