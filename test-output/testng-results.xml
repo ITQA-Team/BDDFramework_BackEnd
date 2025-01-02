@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-02T15:38:51 IST" name="Default suite" finished-at="2025-01-02T15:38:54 IST" duration-ms="2441">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5852c06f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-01-02T15:38:51 IST" name="Default test" finished-at="2025-01-02T15:38:54 IST" duration-ms="2441">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T15:38:51 IST" name="setUpClass" finished-at="2025-01-02T15:38:52 IST" duration-ms="451" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7fd99443]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T15:38:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T15:38:54 IST" duration-ms="1767" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successfully create a new book"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Book API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unexpected status code expected [201] but found [400]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unexpected status code expected [201] but found [400]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:44)
+at ✽.I should receive a response with status code 201(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T15:38:54 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-02T15:38:54 IST" duration-ms="109" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Try to create a book with missing title"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Create Book API"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected message not found expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected message not found expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at stepDefinitions.BookApiSteps.theResponseBodyShouldContain(BookApiSteps.java:62)
+at ✽.the response body should contain "title is required"(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/features/createBook.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@5852c06f]" started-at="2025-01-02T15:38:54 IST" name="tearDownClass" finished-at="2025-01-02T15:38:54 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
