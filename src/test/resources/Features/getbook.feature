@@ -1,6 +1,6 @@
 Feature: Retrieve Book
 
-  Scenario: Admin retrieves a book by ID
+  Scenario: User retrieves a book by ID
     Given I am authenticated as A User
     When I send a GET request to "/api/books/1"
     Then I should receive a response with status code 200
