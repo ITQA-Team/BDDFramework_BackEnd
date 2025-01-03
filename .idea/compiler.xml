@@ -9,5 +9,8 @@
         <module name="BDDFramework_BackEnd" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BDDFramework_BackEnd" target="18" />
+    </bytecodeTargetLevel>
   </component>
 </project>
