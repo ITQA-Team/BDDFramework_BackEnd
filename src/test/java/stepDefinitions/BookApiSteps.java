@@ -7,6 +7,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
 
+import java.util.List;
+
 import static io.restassured.RestAssured.given;
 
 public class BookApiSteps {
@@ -75,10 +77,31 @@ public class BookApiSteps {
         Assert.assertTrue(actualResponse.contains(expectedMessage), "Expected message not found in response body");
     }
 
+    @When("I send a GET request to {string}")
+    public void iSendAGETRequestTo(String endpoint) {
+        response = given()
+                .header("Content-Type", "application/json")
+                .when()
+                .get(endpoint);
+
+        System.out.println("Response Code: " + response.getStatusCode());
+        System.out.println("Response Body: " + response.prettyPrint());
+    }
+
+    @Then("the response body should contain a list of books")
+    public void theResponseBodyShouldContainAListOfBooks() {
+        // Assert that the response contains a list
+        List<Object> books = response.jsonPath().getList(".");
+        Assert.assertTrue(books.size() > 0, "Book list is empty!");
+    }
 
 
 
-    // Nawangi
+
+
+
+
+
 
 
 
