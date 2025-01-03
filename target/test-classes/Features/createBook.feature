@@ -16,3 +16,11 @@ Feature: Create Book API
       |       | Jane          |
     Then I should receive a response with status code 400
     And the response body should contain "Invalid | Empty Input Parameters in the Request"
+    
+    Scenario: Try to create a book with missing author
+    Given I am authenticated as an admin
+    When I send a POST request to "/api/books" with the following details:
+      | title | author        |
+      |  Pride and Prejudice |				|
+    Then I should receive a response with status code 400
+    And the response body should contain "Invalid | Empty Input Parameters in the Request"
