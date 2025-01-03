@@ -20,6 +20,13 @@ public class BookApiSteps {
         RestAssured.authentication = RestAssured.basic("admin", "password");
     }
 
+    @Given("I am authenticated as A User")
+    public void iAmAuthenticatedAsAUser() {
+        // Set up RestAssured base URI and admin authentication
+        RestAssured.baseURI = "http://localhost:7081";
+        RestAssured.authentication = RestAssured.basic("user", "password");
+    }
+
     @When("I send a POST request to {string} with the following details:")
     public void iSendAPOSTRequestToWithTheFollowingDetails(String endpoint, io.cucumber.datatable.DataTable dataTable) {
         // Extract book details from DataTable with null checks
@@ -67,4 +74,12 @@ public class BookApiSteps {
         String actualResponse = response.asString();
         Assert.assertTrue(actualResponse.contains(expectedMessage), "Expected message not found in response body");
     }
+
+
+
+
+    // Nawangi
+
+
+
 }
