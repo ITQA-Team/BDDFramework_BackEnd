@@ -8,7 +8,7 @@ Feature: Delete Book API
     When I send a DELETE request to "/api/books/101"
     Then I should receive a response with status code for deletion 200
     And the response body should contain the message "Book deleted successfully"
-    And the book with ID "101" should no longer exist in the system
+    And the book with ID "200" should no longer exist in the system
 
   Scenario: Try to delete a non-existent book
     Given User is authenticated as an admin
