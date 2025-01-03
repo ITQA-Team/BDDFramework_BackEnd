@@ -5,7 +5,7 @@ Feature: Delete Book API
     And there is a book with the following details:
       | id   | title                 | author               |
       | 101  | The Great Gatsby      | F. Scott Fitzgerald  |
-    When I send a DELETE request to "/api/books/101"
+    When I send a DELETE request to "/api/books/1"
     Then I should receive a response with status code for deletion 200
     And the response body should contain the message "Book deleted successfully"
     And the book with ID "200" should no longer exist in the system
