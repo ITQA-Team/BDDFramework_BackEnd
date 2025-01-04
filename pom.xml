@@ -71,6 +71,8 @@
                 <version>3.5.2</version>
                 <configuration>
                     <includes>**/*TestRunner.java</includes>
+                     <!-- Fail build on any test failure -->
+                <testFailureIgnore>true</testFailureIgnore>
                 </configuration>
             </plugin>
         </plugins>
