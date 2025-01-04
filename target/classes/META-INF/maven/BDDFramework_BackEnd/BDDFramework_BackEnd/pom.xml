@@ -73,6 +73,10 @@
                     <includes>**/*TestRunner.java</includes>
                      <!-- Fail build on any test failure -->
                 <testFailureIgnore>true</testFailureIgnore>
+                <systemPropertyVariables>
+                    <!-- Specify Allure results directory -->
+                    <allure.results.directory>target/allure-results</allure.results.directory>
+                </systemPropertyVariables>
                 </configuration>
             </plugin>
         </plugins>

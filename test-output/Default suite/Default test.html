@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>8/10/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jan 04 16:51:43 IST 2025</td>
+<td>Started on:</td><td>Sat Jan 04 20:38:19 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5238 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6858 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,30 +76,6 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to delete a non-existent book", "Delete Book API"</td>
-<td><div><pre>java.lang.AssertionError: Unexpected status code expected [404] but found [403]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.DeleteBookApiSteps.iShouldReceiveAResponseWithStatusCode(DeleteBookApiSteps.java:67)
-	at ✽.I should receive a response with status code for deletion 404(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/deleteBook.feature:16)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1154275164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1154275164'><pre>java.lang.AssertionError: Unexpected status code expected [404] but found [403]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.DeleteBookApiSteps.iShouldReceiveAResponseWithStatusCode(DeleteBookApiSteps.java:67)
-	at ✽.I should receive a response with status code for deletion 404(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/deleteBook.feature:16)
-</pre></div></td>
-<td>0</td>
-<td>runners.TestRunner@5852c06f</td></tr>
-<tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries to delete a book", "Delete Book API"</td>
 <td><div><pre>java.lang.AssertionError: Unexpected status code expected [403] but found [200]
 	at org.testng.Assert.fail(Assert.java:111)
@@ -110,8 +86,8 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.DeleteBookApiSteps.iShouldReceiveAResponseWithStatusCode(DeleteBookApiSteps.java:67)
 	at ✽.I should receive a response with status code for deletion 403(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/deleteBook.feature:28)
-</pre></div><a href='#' onClick='toggleBox("stack-trace661970164", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace661970164'><pre>java.lang.AssertionError: Unexpected status code expected [403] but found [200]
+</pre></div><a href='#' onClick='toggleBox("stack-trace2101082331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2101082331'><pre>java.lang.AssertionError: Unexpected status code expected [403] but found [200]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -120,54 +96,6 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.DeleteBookApiSteps.iShouldReceiveAResponseWithStatusCode(DeleteBookApiSteps.java:67)
 	at ✽.I should receive a response with status code for deletion 403(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/deleteBook.feature:28)
-</pre></div></td>
-<td>0</td>
-<td>runners.TestRunner@5852c06f</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user should not be allowed to successfully update a book", "Update Book API"</td>
-<td><div><pre>java.lang.AssertionError: Unexpected status code for update expected [403] but found [208]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.UpdateBookSteps.iShouldReceiveAnUpdateResponseWithStatusCode(UpdateBookSteps.java:48)
-	at ✽.I should receive an update response with status code 403(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/updatebook.feature:32)
-</pre></div><a href='#' onClick='toggleBox("stack-trace947069810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace947069810'><pre>java.lang.AssertionError: Unexpected status code for update expected [403] but found [208]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.UpdateBookSteps.iShouldReceiveAnUpdateResponseWithStatusCode(UpdateBookSteps.java:48)
-	at ✽.I should receive an update response with status code 403(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/updatebook.feature:32)
-</pre></div></td>
-<td>0</td>
-<td>runners.TestRunner@5852c06f</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to create a book with missing title", "Create Book API"</td>
-<td><div><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
-	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/createBook.feature:17)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2037147839", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2037147839'><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
-	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/createBook.feature:17)
 </pre></div></td>
 <td>0</td>
 <td>runners.TestRunner@5852c06f</td></tr>
@@ -182,8 +110,8 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.DeleteBookApiSteps.iShouldReceiveAResponseWithStatusCode(DeleteBookApiSteps.java:67)
 	at ✽.I should receive a response with status code for deletion 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/deleteBook.feature:22)
-</pre></div><a href='#' onClick='toggleBox("stack-trace810898134", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace810898134'><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [405]
+</pre></div><a href='#' onClick='toggleBox("stack-trace725978326", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace725978326'><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [405]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -206,8 +134,8 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
 	at ✽.I should receive a response with status code 200(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/getbook.feature:6)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1414953733", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1414953733'><pre>java.lang.AssertionError: Unexpected status code expected [200] but found [403]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1032689422", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1032689422'><pre>java.lang.AssertionError: Unexpected status code expected [200] but found [403]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -216,30 +144,6 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
 	at ✽.I should receive a response with status code 200(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/getbook.feature:6)
-</pre></div></td>
-<td>0</td>
-<td>runners.TestRunner@5852c06f</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to create a book with missing author", "Create Book API"</td>
-<td><div><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
-	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/createBook.feature:25)
-</pre></div><a href='#' onClick='toggleBox("stack-trace532732340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace532732340'><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
-	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/createBook.feature:25)
 </pre></div></td>
 <td>0</td>
 <td>runners.TestRunner@5852c06f</td></tr>
@@ -254,8 +158,8 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
 	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/createBook.feature:50)
-</pre></div><a href='#' onClick='toggleBox("stack-trace11529827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace11529827'><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
+</pre></div><a href='#' onClick='toggleBox("stack-trace18163968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18163968'><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -278,8 +182,8 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.DeleteBookApiSteps.iShouldReceiveAResponseWithStatusCode(DeleteBookApiSteps.java:67)
 	at ✽.I should receive a response with status code for deletion 200(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/deleteBook.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace566105282", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace566105282'><pre>java.lang.AssertionError: Unexpected status code expected [200] but found [403]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1452232618", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1452232618'><pre>java.lang.AssertionError: Unexpected status code expected [200] but found [403]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -288,6 +192,30 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.DeleteBookApiSteps.iShouldReceiveAResponseWithStatusCode(DeleteBookApiSteps.java:67)
 	at ✽.I should receive a response with status code for deletion 200(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/deleteBook.feature:9)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@5852c06f</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user should not be allowed to successfully update a book", "Update Book API"</td>
+<td><div><pre>java.lang.AssertionError: Unexpected status code for update expected [403] but found [208]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.UpdateBookSteps.iShouldReceiveAnUpdateResponseWithStatusCode(UpdateBookSteps.java:48)
+	at ✽.I should receive an update response with status code 403(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/updatebook.feature:32)
+</pre></div><a href='#' onClick='toggleBox("stack-trace109987815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace109987815'><pre>java.lang.AssertionError: Unexpected status code for update expected [403] but found [208]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.UpdateBookSteps.iShouldReceiveAnUpdateResponseWithStatusCode(UpdateBookSteps.java:48)
+	at ✽.I should receive an update response with status code 403(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/updatebook.feature:32)
 </pre></div></td>
 <td>0</td>
 <td>runners.TestRunner@5852c06f</td></tr>
@@ -302,8 +230,8 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.UpdateBookSteps.iShouldReceiveAnUpdateResponseWithStatusCode(UpdateBookSteps.java:48)
 	at ✽.I should receive an update response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/updatebook.feature:17)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1218405027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1218405027'><pre>java.lang.AssertionError: Unexpected status code for update expected [400] but found [200]
+</pre></div><a href='#' onClick='toggleBox("stack-trace145494758", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace145494758'><pre>java.lang.AssertionError: Unexpected status code for update expected [400] but found [200]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -312,6 +240,78 @@ function toggleAllBoxes() {
 	at org.testng.Assert.assertEquals(Assert.java:1383)
 	at stepDefinitions.UpdateBookSteps.iShouldReceiveAnUpdateResponseWithStatusCode(UpdateBookSteps.java:48)
 	at ✽.I should receive an update response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/updatebook.feature:17)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@5852c06f</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to create a book with missing author", "Create Book API"</td>
+<td><div><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
+	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/createBook.feature:25)
+</pre></div><a href='#' onClick='toggleBox("stack-trace908139452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace908139452'><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
+	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/createBook.feature:25)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@5852c06f</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to delete a non-existent book", "Delete Book API"</td>
+<td><div><pre>java.lang.AssertionError: Unexpected status code expected [404] but found [403]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.DeleteBookApiSteps.iShouldReceiveAResponseWithStatusCode(DeleteBookApiSteps.java:67)
+	at ✽.I should receive a response with status code for deletion 404(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/deleteBook.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace79362455", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace79362455'><pre>java.lang.AssertionError: Unexpected status code expected [404] but found [403]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.DeleteBookApiSteps.iShouldReceiveAResponseWithStatusCode(DeleteBookApiSteps.java:67)
+	at ✽.I should receive a response with status code for deletion 404(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/deleteBook.feature:16)
+</pre></div></td>
+<td>0</td>
+<td>runners.TestRunner@5852c06f</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to create a book with missing title", "Create Book API"</td>
+<td><div><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
+	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/createBook.feature:17)
+</pre></div><a href='#' onClick='toggleBox("stack-trace456826612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace456826612'><pre>java.lang.AssertionError: Unexpected status code expected [400] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at stepDefinitions.BookApiSteps.iShouldReceiveAResponseWithStatusCode(BookApiSteps.java:56)
+	at ✽.I should receive a response with status code 400(file:///C:/Users/shakthi/eclipse-workspace/BDDFramework_BackEnd/src/test/resources/Features/createBook.feature:17)
 </pre></div></td>
 <td>0</td>
 <td>runners.TestRunner@5852c06f</td></tr>
@@ -325,22 +325,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully create a new book", "Create Book API"</td>
+<td></td>
+<td>4</td>
+<td>runners.TestRunner@5852c06f</td></tr>
+<tr>
 <td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to update a book author without changing title", "Update Book API"</td>
-<td></td>
-<td>0</td>
-<td>runners.TestRunner@5852c06f</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin retrieves a book by ID", "Retrieve Book"</td>
-<td></td>
-<td>0</td>
-<td>runners.TestRunner@5852c06f</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User retrieves all books", "Retrieve Book"</td>
-<td></td>
-<td>0</td>
-<td>runners.TestRunner@5852c06f</td></tr>
-<tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin retrieves all books", "Retrieve Book"</td>
 <td></td>
 <td>0</td>
 <td>runners.TestRunner@5852c06f</td></tr>
@@ -350,12 +340,22 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>runners.TestRunner@5852c06f</td></tr>
 <tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successfully create a new book", "Create Book API"</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to create a book with an already existing title", "Create Book API"</td>
 <td></td>
-<td>2</td>
+<td>0</td>
 <td>runners.TestRunner@5852c06f</td></tr>
 <tr>
-<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Try to create a book with an already existing title", "Create Book API"</td>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User retrieves all books", "Retrieve Book"</td>
+<td></td>
+<td>0</td>
+<td>runners.TestRunner@5852c06f</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin retrieves a book by ID", "Retrieve Book"</td>
+<td></td>
+<td>0</td>
+<td>runners.TestRunner@5852c06f</td></tr>
+<tr>
+<td title='runners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: runners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Admin retrieves all books", "Retrieve Book"</td>
 <td></td>
 <td>0</td>
 <td>runners.TestRunner@5852c06f</td></tr>
