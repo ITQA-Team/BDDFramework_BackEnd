@@ -24,6 +24,6 @@ Feature: Delete Book API
 
   Scenario: User tries to delete a book
     Given User is authenticated as a user
-    When I send a DELETE request to "/api/books/1"
+    When I send a DELETE request to "/api/books/2"
     Then I should receive a response with status code for deletion 403
     And the response body should contain the message "Permission denied: You are not authorized to delete books"

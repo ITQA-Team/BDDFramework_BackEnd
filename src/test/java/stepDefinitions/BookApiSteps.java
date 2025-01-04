@@ -7,6 +7,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
 
+import java.util.List;
+
 import static io.restassured.RestAssured.given;
 
 public class BookApiSteps {
@@ -18,6 +20,13 @@ public class BookApiSteps {
         // Set up RestAssured base URI and admin authentication
         RestAssured.baseURI = "http://localhost:7081";
         RestAssured.authentication = RestAssured.basic("admin", "password");
+    }
+
+    @Given("I am authenticated as A User")
+    public void iAmAuthenticatedAsAUser() {
+        // Set up RestAssured base URI and admin authentication
+        RestAssured.baseURI = "http://localhost:7081";
+        RestAssured.authentication = RestAssured.basic("user", "password");
     }
 
     @When("I send a POST request to {string} with the following details:")
@@ -67,4 +76,33 @@ public class BookApiSteps {
         String actualResponse = response.asString();
         Assert.assertTrue(actualResponse.contains(expectedMessage), "Expected message not found in response body");
     }
+
+    @When("I send a GET request to {string}")
+    public void iSendAGETRequestTo(String endpoint) {
+        response = given()
+                .header("Content-Type", "application/json")
+                .when()
+                .get(endpoint);
+
+        System.out.println("Response Code: " + response.getStatusCode());
+        System.out.println("Response Body: " + response.prettyPrint());
+    }
+
+    @Then("the response body should contain a list of books")
+    public void theResponseBodyShouldContainAListOfBooks() {
+        // Assert that the response contains a list
+        List<Object> books = response.jsonPath().getList(".");
+        Assert.assertTrue(books.size() > 0, "Book list is empty!");
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
