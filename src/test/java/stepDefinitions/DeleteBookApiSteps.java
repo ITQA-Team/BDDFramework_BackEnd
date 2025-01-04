@@ -20,15 +20,19 @@ public class DeleteBookApiSteps {
         RestAssured.baseURI = "http://localhost:7081";
         RestAssured.authentication = RestAssured.basic("admin", "password");
     }
-
+    @Given("User is authenticated as a user")
+    public void iAmAuthenticatedAsAUser() {
+        // Set up RestAssured base URI and admin authentication
+        RestAssured.baseURI = "http://localhost:7081";
+        RestAssured.authentication = RestAssured.basic("user", "password");
+    }
     @Given("there is a book with the following details:")
     public void thereIsABookWithTheFollowingDetails(io.cucumber.datatable.DataTable dataTable) {
-        // Extract book details from DataTable
+
         String id = dataTable.cell(1, 0).trim();
         String title = dataTable.cell(1, 1).trim();
         String author = dataTable.cell(1, 2).trim();
 
-        // Create the book if it does not exist (idempotent setup)
         String jsonBody = String.format("{\"id\": \"%s\", \"title\": \"%s\", \"author\": \"%s\"}", id, title, author);
         Response createResponse = given()
                 .header("Content-Type", "application/json")
@@ -41,34 +45,38 @@ public class DeleteBookApiSteps {
         }
     }
 
+
     @When("I send a DELETE request to {string}")
     public void iSendADELETERequestTo(String endpoint) {
-        // Send DELETE request
-        response = given()
-                .header("Content-Type", "application/json")
-                .when()
-                .delete(endpoint);
+        try {
+            response = given()
+                    .header("Content-Type", "application/json")
+                    .when()
+                    .delete(endpoint);
 
-        System.out.println("Response Code: " + response.getStatusCode());
-        System.out.println("Response Body: " + response.prettyPrint());
+            System.out.println("Response Code: " + response.getStatusCode());
+            System.out.println("Response Body: " + response.prettyPrint());
+        } catch (Exception e) {
+            System.out.println("Error while sending DELETE request: " + e.getMessage());
+            response = null;
+        }
     }
-
     @Then("I should receive a response with status code for deletion {int}")
     public void iShouldReceiveAResponseWithStatusCode(int statusCode) {
-        // Assert the response status code
+        Assert.assertNotNull(response, "Response object is null. Request may have failed.");
         Assert.assertEquals(response.getStatusCode(), statusCode, "Unexpected status code");
     }
 
     @Then("the response body should contain the message {string}")
     public void theResponseBodyShouldContainTheMessage(String expectedMessage) {
-        // Assert the response body contains the expected message
+        Assert.assertNotNull(response, "Response object is null. Request may have failed.");
         String actualResponse = response.asString();
         Assert.assertTrue(actualResponse.contains(expectedMessage), "Expected message not found in response body");
     }
 
     @Then("the book with ID {string} should no longer exist in the system")
     public void theBookWithIDShouldNoLongerExistInTheSystem(String bookId) {
-        // Send a GET request to verify the book does not exist
+
         Response getResponse = given()
                 .when()
                 .get("/api/books/" + bookId);

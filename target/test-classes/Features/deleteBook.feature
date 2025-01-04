@@ -21,3 +21,9 @@ Feature: Delete Book API
     When I send a DELETE request to "/api/books/"
     Then I should receive a response with status code for deletion 400
     And the response body should contain the message "Invalid book ID"
+
+  Scenario: User tries to delete a book
+    Given User is authenticated as a user
+    When I send a DELETE request to "/api/books/1"
+    Then I should receive a response with status code for deletion 403
+    And the response body should contain the message "Permission denied: You are not authorized to delete books"
